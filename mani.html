@@ -4,13 +4,16 @@
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width initial-scale=1.0'>
         <title>
-            QQ音乐-Copy
+            QQ音乐
         </title>
-        <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-        
+        <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <script src="jquery-1.12.4.min.js"></script>
         <script src="index.js"></script>
+        <!-- <script src="getSong.js"></script> -->
+        <script>
+            
+        </script>
     </head>
     <body>
         <!-- 爱心实<i class="fa fa-heart" aria-hidden="true"></i> -->
@@ -20,6 +23,9 @@
         <!-- 下载<i class="fa fa-download" aria-hidden="true"></i> -->
         <!-- 清除<i class="mod_btn_green__icon_clear"></i> -->
         <!-- song-pic  //y.gtimg.cn/mediastyle/yqq/extra/player_cover.png?max_age=31536000 -->
+        <audio class="myMusic" src="" type="audio/mp3">
+            你的浏览器不支持播放音乐
+        </audio>
         <div class="top">
             <a href="javascript:;">QQ音乐</a>
             <ul class="log">
@@ -51,8 +57,6 @@
                         </li>
                     </ul>
                 </div>
-                
-                
                 <ul class="label">
                     <li class="Name">
                         <a class='number' href="javascript:;">
@@ -69,7 +73,7 @@
             </div>
             <div class="right">
                 <div class="pic">
-                    <img src="player_cover.png" alt="">
+                    <img src="pic/player_cover.png" alt="">
                 </div>
                 
             </div>
@@ -90,8 +94,16 @@
             </div>
             <!-- 进度条 -->
             <div class="playInfo">
-                <a href="javascript:;" class="songInfo">leshi/leshi</a>
-                <span class="songTime">00:00/00:00</span>
+                <a href="javascript:;" class="songInfo">
+                    <span class="songName">无</span>
+                    /
+                    <span class="singer">无</span>
+                </a>
+                <span class="songTime">
+                    <span class="now">00:00</span> 
+                    /
+                    <span class="total">00:00</span> 
+                </span>
                 <div class="playMark">
                     <div class="timeMark"></div>
                     <div class="pMark"></div>
@@ -103,8 +115,7 @@
                     <i class="fa fa-retweet" aria-hidden="true" title="循环播放"></i>
                 </a>
                 <a href="javascript:;">
-                    <i class="fa fa-heart-o" aria-hidden="true" title="喜欢"></i><!-- 空心 -->
-                    <!-- <i class="fa fa-heart" aria-hidden="true" title="取消喜欢"></i> -->
+                    <i class="fa fa-heart-o" aria-hidden="true" title="喜欢"></i>
                 </a>
                 <a href="javascript:;">
                     <i class="fa fa-download" aria-hidden="true" title="下载"></i>
